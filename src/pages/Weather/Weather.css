@@ -1,0 +1,220 @@
+/* Weather.css */
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body Styles */
+  body {
+    margin: 0;
+    font-family: Roboto, "Ubuntu", Arial, sans-serif;
+    background-color: black;
+  }
+  
+  /* Typography */
+  p {
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  /* App Styles */
+  .weather {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+  }
+  
+  .weather:before {
+    content: '';
+    background: url('../../assets/images/weather2.gif') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: auto;
+    padding: 0 1rem;
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .top {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  
+  .temp {
+    display: flex;
+  }
+  
+  .icon img {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    right: -100%;
+    filter: drop-shadow(3px .5px #ffffff);
+  }
+  
+  .description {
+    position: relative;
+    font-size: 1.5rem;
+    right: -90%;
+    transform-origin: 0 0;
+    transform: rotate(269deg);
+  }
+  
+  .bottom {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .date {
+    max-width: 500px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .bold {
+    font-weight: 700;
+  }
+  
+  .search {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  input {
+    padding: .7rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.1);
+    color: #f8f8f8;
+  }
+  
+  ::placeholder {
+    color: #f8f8f8;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 999;
+  }
+  
+  .alert {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #721c24;
+  }
+  
+  .close-button:hover {
+    color: #c82333;
+  }
+  
+  .footer {
+    position: fixed;
+    padding: 10px;
+    right: 0px;
+    bottom: 0px;
+  }
+  
+  .unit-dropdown {
+    position: fixed;
+    top: 1rem;
+  }
+  
+  /* CSS for button */
+  
+  button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: rgba(232, 232, 232, 0.5); /* Transparent background */
+    position: fixed; /* Fixed positioning */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    font-weight: 1000;
+    font-size: 17px;
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+  }
+  
+  button:hover {
+    color: #e8e8e8;
+  }
+  
+  button:hover::before {
+    width: 100%;
+  }
+  
+  
+  
