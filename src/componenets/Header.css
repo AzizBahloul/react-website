@@ -1,0 +1,31 @@
+/* Header.css */
+
+nav {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-right: 20px; /* Adjust spacing between the list items */
+  }
+  
+  li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333; /* Change link color */
+    font-weight: bold; /* Make the font bold */
+  }
+  
+  a:hover {
+    color: #666; /* Change link color on hover */
+  }
+  
