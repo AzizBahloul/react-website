@@ -6,6 +6,7 @@ import Weather from './pages/Weather/Weather';
 import Calculator from './pages/Calculator/Calculator';
 import Home from './pages/Home/Home';
 import Movies from './pages/Movies/Movies';
+import Login from './pages/LoginPage/Login';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/Weather" element={<Weather />} />
             <Route path="/Calculator" element={<Calculator />} />
             <Route path='/Movies' element={<Movies/>} />
+            <Route path='/Login' element={<Login/>} />
           </Routes>
         </header>
       </div>

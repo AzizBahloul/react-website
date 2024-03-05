@@ -4,6 +4,7 @@ import weatherImage from '../../assets/images/weather.gif';
 import CalculatorImg from '../../assets/images/Calculator.gif';
 import TryToTouchMe from '../../assets/images/trytotouchme.gif';
 import MoviesSuggestion from '../../assets/images/movie.gif';
+import Letmein from '../../assets/images/login.gif';
 import './Home.css'; 
 
 const Home = () => {
@@ -42,6 +43,15 @@ const Home = () => {
                 </div>
                 <div className="card_title title-black">
                     <p>Movies suggestion</p>
+                </div>
+            </Link>
+
+            <Link to="/Login" className="card 2">
+                <div className="card_image">
+                    <img src={Letmein} alt="Card Image 2" />
+                </div>
+                <div className="card_title title-white">
+                    <p>Login</p>
                 </div>
             </Link>
         </div>
